@@ -1,3 +1,3 @@
 export function deepMerge(
-    ...objects: objects
+    ...objects: object
 ): object;
