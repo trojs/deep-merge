@@ -1,7 +1,7 @@
 {
     "name": "@hckrnews/deep-merge",
     "description": "Object deep merge",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "author": {
         "name": "Pieter Wigboldus",
         "url": "https://hckr.news/"
@@ -20,9 +20,11 @@
     "type": "module",
     "files": [
         "src/index.js",
-        "src/deep-merge.js"
+        "src/deep-merge.js",
+        "src/schema.d.ts"
     ],
     "main": "src/index.js",
+    "types": "src/schema.d.ts",
     "devDependencies": {
         "@hckrnews/eslint-config": "^3.0.0",
         "c8": "^8.0.0",
