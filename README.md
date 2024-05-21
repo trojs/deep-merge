@@ -10,9 +10,9 @@ Zero dependencies.
 
 ## Installation
 
-`npm install @hckrnews/deep-merge`
+`npm install @trojs/deep-merge`
 or
-`yarn add @hckrnews/deep-merge`
+`yarn add @trojs/deep-merge`
 
 ## Test the package
 
@@ -24,7 +24,7 @@ or
 
 
 ```javascript
-npm i @hckrnews/deep-merge
+npm i @trojs/deep-merge
 
 ```
 
@@ -55,5 +55,5 @@ const expectedResult = {
 ```
 
 
-[npm-url]: https://www.npmjs.com/package/@hckrnews/deep-merge
-[npm-image]: https://img.shields.io/npm/v/@hckrnews/deep-merge.svg
+[npm-url]: https://www.npmjs.com/package/@trojs/deep-merge
+[npm-image]: https://img.shields.io/npm/v/@trojs/deep-merge.svg
