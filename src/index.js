@@ -1,1 +1,1 @@
-export * from './deep-merge.js'
+export * from './deep-merge.js';
