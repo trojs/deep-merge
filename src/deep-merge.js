@@ -1,7 +1,8 @@
 /**
- * Deep merge objects
- * @param {any} objects - Objects to merge
- * @returns {object} New object with merged key/values
+ * Deeply merges multiple objects into one.
+ * @template {object} [T=object]
+ * @param {...any} objects - Objects to merge
+ * @returns {T} New object with merged key/values
  */
 export const deepMerge = (...objects) => {
     const isObject = (obj) => obj?.constructor === Object;
