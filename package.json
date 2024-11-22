@@ -1,16 +1,16 @@
 {
     "name": "@trojs/deep-merge",
     "description": "Object deep merge",
-    "version": "0.4.7",
+    "version": "1.0.0",
     "author": {
         "name": "Pieter Wigboldus",
         "url": "https://trojs.org/"
     },
     "license": "MIT",
     "scripts": {
-        "lint": "eslint src/*.js --config .eslintrc",
-        "lint:report": "eslint src/*.js --config .eslintrc -f json -o report.json",
-        "lint:fix": "eslint src/*.js --config .eslintrc --fix",
+        "lint": "eslint",
+        "lint:report": "eslint src/*.js -f json -o report.json",
+        "lint:fix": "eslint --fix",
         "lint:rules": "eslint --print-config file.js > eslintconfig.json",
         "test": "c8 node --test src/*.test.js",
         "test:watch": "c8 node --watch --test src/*.test.js",
@@ -26,20 +26,19 @@
     "main": "src/index.js",
     "types": "src/schema.d.ts",
     "devDependencies": {
-        "@hckrnews/eslint-code-quality": "^0.2.1",
-        "@hckrnews/eslint-config": "^3.0.0",
+        "@eslint/js": "^9.15.0",
+        "@stylistic/eslint-plugin": "^2.11.0",
+        "@stylistic/eslint-plugin-js": "^2.11.0",
         "c8": "^10.0.0",
-        "eslint": "^8.23.0",
-        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint": "^9.15.0",
         "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-html": "^8.1.1",
-        "eslint-plugin-import": "^2.29.1",
-        "eslint-plugin-jsdoc": "^50.0.0",
-        "eslint-plugin-jsx-a11y": "^6.9.0",
-        "eslint-plugin-n": "^17.9.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-jsdoc": "^50.5.0",
+        "eslint-plugin-n": "^17.14.0",
         "eslint-plugin-prettier": "^5.2.1",
-        "eslint-plugin-promise": "^7.0.0",
-        "eslint-plugin-sonarjs": "^0.25.1",
+        "eslint-plugin-promise": "^7.1.0",
+        "eslint-plugin-sonarjs": "^2.0.4",
+        "globals": "^15.12.0",
         "jscpd": "^4.0.0",
         "prettier": "^3.3.3"
     },
@@ -48,7 +47,7 @@
         "url": "https://github.com/trojs/deep-merge"
     },
     "engines": {
-        "node": ">= 18.13"
+        "node": ">= 20"
     },
     "keywords": [
         "object",
@@ -58,5 +57,14 @@
     "funding": {
         "type": "github",
         "url": "https://github.com/sponsors/w3nl"
+    },
+    "overrides": {
+        "eslint-plugin-sonarjs": {
+            "eslint": "^9.15.0",
+            "@typescript-eslint/eslint-plugin": "^8.0.0",
+            "@typescript-eslint/utils": "^8.0.0",
+            "eslint-plugin-import": "^2.31.0",
+            "eslint-plugin-react-hooks": "^5.0.0"
+        }
     }
 }
