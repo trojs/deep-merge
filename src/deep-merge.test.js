@@ -51,4 +51,13 @@ test('deepMerge', async (t) => {
     }
     assert.deepEqual(result, expectedResult)
   })
+
+  await t.test('It should merge 3 objects', async () => {
+    const obj1 = { a: [[1]] }
+    const obj2 = { a: [[2]] }
+    const result = deepMerge(obj1, obj2)
+
+    const expectedResult = { a: [[1], [2]] }
+    assert.deepEqual(result, expectedResult)
+  })
 })

@@ -1,7 +1,7 @@
 {
     "name": "@trojs/deep-merge",
     "description": "Object deep merge",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "author": {
         "name": "Pieter Wigboldus",
         "url": "https://trojs.org/"
@@ -13,7 +13,7 @@
         "lint:fix": "eslint --fix",
         "lint:rules": "eslint --print-config file.js > eslintconfig.json",
         "test": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=./coverage/lcov.info",
-        "test:watch": "c8 node --watch --test src/*.test.js",
+        "test:watch": "node --watch --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=./coverage/lcov.info",
         "cpd": "node_modules/jscpd/bin/jscpd src",
         "vulnerabilities": "npm audit --omit=dev"
     },

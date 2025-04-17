@@ -13,7 +13,7 @@ export const deepMerge = (...objects) => {
       const oVal = currentValue[key]
 
       if (Array.isArray(pVal) && Array.isArray(oVal)) {
-        accumulator[key] = pVal.concat(...oVal)
+        accumulator[key] = pVal.concat(oVal)
       } else if (isObject(pVal) && isObject(oVal)) {
         accumulator[key] = deepMerge(pVal, oVal)
       } else {
